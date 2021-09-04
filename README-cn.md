@@ -1,5 +1,9 @@
 # ID Slug by Pipecraft
 
+[English](README.md) | 中文
+
+---
+
 这是一个使discussion的URL只包含`id`的[Flarum](http://flarum.org)插件。
 
 - AS-IS:

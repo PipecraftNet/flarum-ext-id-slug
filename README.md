@@ -1,5 +1,9 @@
 # ID Slug by Pipecraft
 
+English | [中文](README-cn.md)
+
+---
+
 A [Flarum](http://flarum.org) extension. Use `id` as the `slug` in the discussion URL.
 
 - AS-IS:
