@@ -1,0 +1,43 @@
+{
+    "name": "pipecraft/flarum-ext-id-slug",
+    "description": "A Flarum extension. Use id as slug in discussion URL.",
+    "keywords": [
+        "flarum",
+        "slug"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pipecraft",
+            "email": "pipecraft.net@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/PipecraftNet/flarum-ext-id-slug/issues",
+        "source": "https://github.com/PipecraftNet/flarum-ext-id-slug"
+    },
+    "homepage": "https://github.com/PipecraftNet",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pipecraft\\IdSlug\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "ID Slug",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-info",
+                "backgroundColor": "#000",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/"
+        }
+    }
+}

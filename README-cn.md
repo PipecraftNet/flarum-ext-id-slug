@@ -1,6 +1,6 @@
 # ID Slug by Pipecraft
 
-A [Flarum](http://flarum.org) extension. Use `id` as the `slug` in the discussion URL.
+这是一个使discussion的URL只包含`id`的[Flarum](http://flarum.org)插件。
 
 - AS-IS:
   - http://exmaple.com/d/123-hello-world
@@ -21,12 +21,12 @@ composer require pipecraft/flarum-ext-id-slug
 composer update pipecraft/flarum-ext-id-slug
 ```
 
-### How to Update the Slug of Existing Discussions
+### 如何更新已有数据
 
-You can run this SQL to clear all slugs. 
+你可以执行一个SQL，类似 
 
 ```sql
 UPDATE `flarum_discussions` SET `slug`='' WHERE <condition>;
 ```
 
-Or you can rename the title of the discussion to update the slug.
+或在Flarum页面修改标题，更新slug。
