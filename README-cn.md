@@ -31,7 +31,7 @@ composer update pipecraft/flarum-ext-id-slug
 
 1. 安装插件
 2. 后台管理 > ID Slug > 开启插件
-3. 常规 > Discussion Slug Driver > 选择 **id** 类型
+3. 常规 > Slug Driver(Discussion) > 选择 **id** 类型
 
 ### ⚠️注意事项
 
@@ -54,5 +54,5 @@ composer update pipecraft/flarum-ext-id-slug
 如果想使用[v1.0版本](https://github.com/PipecraftNet/flarum-ext-id-slug/tree/v1.0)，请使用下面命令安装。
 
 ```sh
-composer require pipecraft/flarum-ext-id-slug:1.0
+composer require pipecraft/flarum-ext-id-slug:1.0.*
 ```

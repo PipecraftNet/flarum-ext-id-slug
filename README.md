@@ -30,7 +30,7 @@ composer update pipecraft/flarum-ext-id-slug
 
 1. Install extension
 2. Enable **ID Slug** extension
-3. Basics > Discussion Slug Driver > Select **id** slug driver
+3. Basics > Slug Driver(Discussion) > Select **id** slug driver
 
 ### ⚠️ Notice
 
@@ -51,5 +51,5 @@ composer update pipecraft/flarum-ext-id-slug
 
 If you want to use the [v1.0 version](https://github.com/PipecraftNet/flarum-ext-id-slug/tree/v1.0), install the extension like this
 ```sh
-composer require pipecraft/flarum-ext-id-slug:1.0
+composer require pipecraft/flarum-ext-id-slug:1.0.*
 ```
