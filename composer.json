@@ -3,7 +3,8 @@
     "description": "A Flarum extension. Use id as slug in discussion URL.",
     "keywords": [
         "flarum",
-        "slug"
+        "slug",
+        "slug-driver"
     ],
     "type": "flarum-extension",
     "license": "MIT",
