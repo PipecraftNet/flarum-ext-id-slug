@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of PipecraftNet/flarum-ext-id-slug
+ * This file is part of PipecraftNet/flarum-ext-id-slug.
  *
  * Copyright (c) Pipecraft.
  *
@@ -11,10 +11,11 @@
 
 namespace Pipecraft\IdSlug;
 
-use Flarum\Discussion\Event\Saving;
+use Flarum\Discussion\Discussion;
 use Flarum\Extend;
+use Pipecraft\IdSlug\Discussion\IdSlugDriver;
 
 return [
-    (new Extend\Event())
-        ->listen(Saving::class, Listeners\SlugOverwriter::class),
+    (new Extend\ModelUrl(Discussion::class))
+        ->addSlugDriver('id', IdSlugDriver::class)
 ];
