@@ -15,6 +15,7 @@ use Flarum\Database\AbstractModel;
 use Flarum\Discussion\DiscussionRepository;
 use Flarum\Http\SlugDriverInterface;
 use Flarum\User\User;
+use Illuminate\Support\Str;
 
 class IdSlugDriver implements SlugDriverInterface
 {
@@ -30,6 +31,19 @@ class IdSlugDriver implements SlugDriverInterface
 
     public function toSlug(AbstractModel $instance): string
     {
+        // TODO: Read settings
+        if (true) {
+            $title = $instance->title;
+            $slug = Str::slug($title, '-', 'en');
+            $slug_test = Str::slug($title, '-', 'zh-Hans');
+
+            if ($slug == $slug_test) {
+                // Use default slug driver
+                return $instance->id . (trim($slug) ? '-' . $slug : '');
+            } else {
+                return $instance->id;
+            }
+        }
         return $instance->id;
     }
 
